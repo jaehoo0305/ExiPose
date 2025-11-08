@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 37105bde0ed8a3d408dd0fa4e664792a
+timeCreated: 1522083642
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Foliage/prefab_polytope_mushroom01.prefab
+  uploadId: 465298

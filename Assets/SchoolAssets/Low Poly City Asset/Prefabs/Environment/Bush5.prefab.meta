@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d3d60ea3e8a8b124e826195ba2ebfe46
+timeCreated: 1507560260
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/Bush5.prefab
+  uploadId: 271900

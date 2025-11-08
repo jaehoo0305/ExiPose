@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: aaa69cb7befe435488cbd634ff8d9212
+timeCreated: 1499342510
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/Tree3.prefab
+  uploadId: 271900

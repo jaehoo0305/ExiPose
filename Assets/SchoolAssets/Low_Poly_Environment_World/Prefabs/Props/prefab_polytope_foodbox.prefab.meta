@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b3ada667a9c8618409dd4f738d91fa9f
+timeCreated: 1522083650
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Props/prefab_polytope_foodbox.prefab
+  uploadId: 465298

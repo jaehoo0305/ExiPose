@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: fb0468c9667d3db41ad66e2dfa080e4c
+timeCreated: 1523194780
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Foliage/prefab_polytope_plant04.prefab
+  uploadId: 465298

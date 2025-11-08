@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ac2c74d315154c0469612c0f7495dd48
+timeCreated: 1522274248
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Content/Models/Materials/material_polytope_sky_bunker.mat
+  uploadId: 465298

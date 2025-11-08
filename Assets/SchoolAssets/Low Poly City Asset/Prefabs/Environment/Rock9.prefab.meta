@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fcba6df47dfbcc44298e6a142cb2fa9a
+timeCreated: 1499343187
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/Rock9.prefab
+  uploadId: 271900

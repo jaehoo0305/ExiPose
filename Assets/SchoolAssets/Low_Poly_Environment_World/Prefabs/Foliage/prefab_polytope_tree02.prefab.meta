@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1a098dac2f31e2d4a87847ad00ca378d
+timeCreated: 1522083593
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Foliage/prefab_polytope_tree02.prefab
+  uploadId: 465298

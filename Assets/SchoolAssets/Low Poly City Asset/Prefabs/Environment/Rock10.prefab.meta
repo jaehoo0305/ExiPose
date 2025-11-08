@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c68491a863c1c32468f21dd2cb3b71ee
+timeCreated: 1499343189
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/Rock10.prefab
+  uploadId: 271900

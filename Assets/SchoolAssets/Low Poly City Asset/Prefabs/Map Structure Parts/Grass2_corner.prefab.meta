@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 40305658f343e4c41b057b8e80cdd479
+timeCreated: 1499787071
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Map Structure Parts/Grass2_corner.prefab
+  uploadId: 271900

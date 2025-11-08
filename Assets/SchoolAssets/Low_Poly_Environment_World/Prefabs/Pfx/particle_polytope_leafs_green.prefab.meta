@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 21d7a5228e3ea7647817a5a6e0592818
+timeCreated: 1522348552
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Pfx/particle_polytope_leafs_green.prefab
+  uploadId: 465298

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: dfd36db987e32fb43a30088fd5efdeba
+timeCreated: 1508339346
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/fountain4.prefab
+  uploadId: 271900

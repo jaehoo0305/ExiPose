@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b104b0a1585a7744f978d727c0de2f3d
+timeCreated: 1499777861
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Buildings/Building7_3.prefab
+  uploadId: 271900

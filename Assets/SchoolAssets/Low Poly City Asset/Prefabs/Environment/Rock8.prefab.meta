@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 628c1d76cb9db0c47884ca9e49ef1786
+timeCreated: 1499343186
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/Rock8.prefab
+  uploadId: 271900

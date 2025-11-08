@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5e0a463f8e283854cb0c338ec7b3af7b
+timeCreated: 1511867239
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Buildings/Skyscraper5_1.prefab
+  uploadId: 271900

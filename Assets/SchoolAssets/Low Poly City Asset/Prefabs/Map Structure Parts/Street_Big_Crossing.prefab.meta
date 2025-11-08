@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 429c0e0aa1a1b2848bde7b324fb8e54c
+timeCreated: 1499780780
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Map Structure Parts/Street_Big_Crossing.prefab
+  uploadId: 271900

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7d5c4d6c03a89924ca03c7926f06ca14
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Content/Models/Materials/mat_sparks.mat
+  uploadId: 465298

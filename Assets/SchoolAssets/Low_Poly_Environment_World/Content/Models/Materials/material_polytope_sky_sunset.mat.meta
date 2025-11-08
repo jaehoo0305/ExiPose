@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d662c71d532cead4b9d672a07b3edbab
+timeCreated: 1522274248
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Content/Models/Materials/material_polytope_sky_sunset.mat
+  uploadId: 465298

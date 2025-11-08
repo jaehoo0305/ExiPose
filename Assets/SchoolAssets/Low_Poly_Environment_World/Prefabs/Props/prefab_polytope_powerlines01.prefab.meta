@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 68f45cbdba1a7b2488ba351a0aa907a6
+timeCreated: 1522083628
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Props/prefab_polytope_powerlines01.prefab
+  uploadId: 465298

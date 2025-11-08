@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a9488344a7214bf4ba1183cdd4597391
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Props/prefab_wind_turbine.prefab
+  uploadId: 465298

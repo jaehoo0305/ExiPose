@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 44cedcf432e9caa42bd1928eb7aa0ee2
+timeCreated: 1499785683
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/Trash_bin2.prefab
+  uploadId: 271900

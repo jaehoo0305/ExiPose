@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 01fc8e1fbda4cbd4b8a03ab5eb21a18b
+timeCreated: 1522083656
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/Prefabs/Foliage/prefab_polytope_fern03.prefab
+  uploadId: 465298

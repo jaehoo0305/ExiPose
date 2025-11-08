@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ba8d69bca3226b40bd2940d0765f2c3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116263
+  packageName: Low Poly Environment World
+  packageVersion: 3
+  assetPath: Assets/Low_Poly_Environment_World/DemeScenes/DemoScene_BadLandsSettings.lighting
+  uploadId: 465298

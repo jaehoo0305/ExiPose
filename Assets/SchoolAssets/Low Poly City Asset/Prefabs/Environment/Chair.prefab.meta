@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 097be87cf93e1fb4bbd33ddeb9f3332c
+timeCreated: 1499785675
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 95566
+  packageName: Low Poly City Asset
+  packageVersion: 1.4
+  assetPath: Assets/Low Poly City Asset/Prefabs/Environment/Chair.prefab
+  uploadId: 271900
