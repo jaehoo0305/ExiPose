@@ -8693,6 +8693,8 @@ GameObject:
   - component: {fileID: 847792462}
   - component: {fileID: 847792465}
   - component: {fileID: 847792466}
+  - component: {fileID: 847792467}
+  - component: {fileID: 847792468}
   m_Layer: 0
   m_Name: CineMainCamera
   m_TagString: MainCamera
@@ -8768,7 +8770,7 @@ Transform:
   m_GameObject: {fileID: 847792461}
   serializedVersion: 2
   m_LocalRotation: {x: 0.06162845, y: 0.70441604, z: -0.06162845, w: 0.70441604}
-  m_LocalPosition: {x: -3.8429184, y: 1.7, z: 120.12612}
+  m_LocalPosition: {x: -1.6399994, y: 1.36, z: -0.07387543}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8850,6 +8852,50 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &847792467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847792461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f96107e324738498a2d2fd1d18c40d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraShake
+  duration: 1
+  magnitude: 1
+--- !u!114 &847792468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847792461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 12ac35d0a1f900c48a044e1599fbb4ca, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 847792467}
+          m_TargetAssemblyTypeName: CameraShake, Assembly-CSharp
+          m_MethodName: Shake
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &849481348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17173,6 +17219,8 @@ PlayableDirector:
     value: {fileID: 1153867558}
   - key: {fileID: 3730245628270298060, guid: 1c61570611e19d24ca9460920d5e46da, type: 2}
     value: {fileID: 1659098741}
+  - key: {fileID: 5622888108445814385, guid: 1c61570611e19d24ca9460920d5e46da, type: 2}
+    value: {fileID: 847792468}
   m_ExposedReferences:
     m_References:
     - b027b3291c9af3f49b8bb3d44dc913a8: {fileID: 646334316}
