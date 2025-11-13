@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
     public static SceneLoader Instance;
+
+    [Header("Loading UI")]
     public GameObject loadingCanvas;
     public float minimumLoadTime = 1f;
 
@@ -14,10 +17,58 @@ public class SceneLoader : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+            FindLoadingCanvas();
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindLoadingCanvas();
+    }
+
+    private void FindLoadingCanvas()
+    {
+        if (loadingCanvas != null) return;
+
+        // 1) Tag search
+        var tagged = GameObject.FindWithTag("LoadingCanvas");
+        if (tagged != null)
+        {
+            loadingCanvas = tagged;
+            return;
+        }
+
+        // 2) Name search
+        var byName = GameObject.Find("LoadingCanvas");
+        if (byName != null)
+        {
+            loadingCanvas = byName;
+            return;
+        }
+
+        // 3) Any Canvas that contains "loading" in its name (include inactive)
+#if UNITY_2023_1_OR_NEWER
+        var canvases = Object.FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+#else
+        var canvases = Object.FindObjectsOfType<Canvas>(true);
+#endif
+        foreach (var c in canvases)
+        {
+            if (c != null && c.name.ToLower().Contains("loading"))
+            {
+                loadingCanvas = c.gameObject;
+                return;
+            }
         }
     }
 
@@ -28,29 +79,20 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator LoadSceneRoutine(string sceneName)
     {
+        FindLoadingCanvas();
+
         if (loadingCanvas != null)
             loadingCanvas.SetActive(true);
 
-        yield return null;
+        yield return new WaitForSeconds(minimumLoadTime);
 
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
-        op.allowSceneActivation = false;
-
-        float timer = 0f;
         while (!op.isDone)
         {
-            timer += Time.deltaTime;
-
-            // 0.9f = 거의 로드 완료된 상태
-            if (op.progress >= 0.9f && timer >= minimumLoadTime)
-            {
-                op.allowSceneActivation = true;
-            }
-
             yield return null;
         }
 
-        yield return null;
+        FindLoadingCanvas();
 
         if (loadingCanvas != null)
             loadingCanvas.SetActive(false);
