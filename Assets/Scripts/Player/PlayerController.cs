@@ -32,6 +32,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsActive)
+        {
+            anim.SetFloat("MoveSpeed", 0f, 0.1f, Time.deltaTime);
+            return;
+        }
+
         HandleMovement();
         HandleAttack();
 

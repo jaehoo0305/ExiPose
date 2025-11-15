@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc998edc0ea323f4b9e57816bcfb210f, type: 3}
+  m_Name: Intro_Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueId: Intro_Dialogue
+  lines:
+  - speaker: Player
+    text: "\uC5EC\uAE34 \uC5B4\uB514?"
+  - speaker: ???
+    text: "\uC548\uB155\uD558\uC138\uC694?"
+  - speaker: Player
+    text: ????
+  - speaker: ???
+    text: "\uC77C\uB2E8\uC740 \uB2F9\uC2E0\uBCF4\uB2E4 \uB354 \uBA3C\uC800 \uAC10\uAE08\uB41C
+      \uC0AC\uB78C\uC774\uB77C \uD574\uB461\uC2DC\uB2E4 \uB2F9\uC2E0\uC740 \uC5B4\uCA4C\uB2E4
+      \uC5EC\uAE38..."
+  - speaker: Player
+    text: "\uD3C9\uD654\uB86D\uAC8C \uCDE8\uC7AC\uD558\uB294 \uC800\uB97C \uB9C9\uBB34\uAC00\uB0B4\uB85C
+      \uD3EC\uBC15\uD558\uB354\uAD70\uC694"
+  - speaker: ???
+    text: "\uC800\uC640 \uAC19\uC774 \uC774 \uBE4C\uB529\uC744 \uD0C8\uCD9C\uD558\uC9C0
+      \uC54A\uACA0\uC2B5\uB2C8\uAE4C?"
+  - speaker: Player
+    text: "\uC88B\uC2B5\uB2C8\uB2E4"
+  - speaker: ???
+    text: "\uC800\uB3C4 \uC774 \uBE4C\uB529\uC744 \uB9CE\uC774 \uB3CC\uC544\uB2E4\uB154\uC73C\uB098
+      \uD56D\uC0C1 \uC2E4\uD328\uD588\uACE0 \uD56D\uC0C1 \uC7A1\uD614\uC8E0 \uD558\uC9C0\uB9CC
+      \uB2F9\uC2E0\uACFC \uD568\uAED8\uB77C\uBA74 \uD0C8\uCD9C\uC744 \uB2E4\uC2DC
+      \uAFC8\uAFD4\uBD10\uB3C4 \uB418\uACA0\uC2B5\uB2C8\uB2E4!"
+  - speaker: ???
+    text: "\uD558\uC9C0\uB9CC \uC81C\uAC00 \uC694\uC998 \uBAB8\uC774 \uC548 \uC88B\uC544\uC11C..."
+  - speaker: Player
+    text: "(\uC5B4\uCA4C\uC790\uB294 \uAC78\uAE4C)"
+  - speaker: ???
+    text: "\uC81C\uAC00 \uC544\uAE4C \uB2F9\uC2E0\uC774 \uC4F0\uB7EC\uC84C\uC744\uB54C
+      \uADC0\uC5D0 \uC778\uC774\uC5B4\uB97C \uC7A5\uCC29\uC2DC\uCF30\uC2B5\uB2C8\uB2E4
+      \uC774\uAC78\uB85C \uC18C\uD1B5\uD558\uC5EC \uD0C8\uCD9C\uD569\uC2DC\uB2E4"
+  - speaker: ???
+    text: "\uBB3C\uB860 \uD55C \uBC88\uC5D0 \uD0C8\uCD9C\uD558\uB294\uAC83\uC740
+      \uC5B4\uB824\uC6B8 \uAC83\uC785\uB2C8\uB2E4 \uB2F9\uC2E0\uC774 \uC7AC\uB8CC\uB97C
+      \uBAA8\uC544 \uC625\uC0C1\uC73C\uB85C \uC624\uBA74 \uC81C\uC791\uC744 \uD1B5\uD574
+      \uB2F9\uC2E0\uC744 \uAC15\uD558\uAC8C \uB9CC\uB4E4\uC5B4\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4"
+  - speaker: Player
+    text: "(\uB9D0\uC774 \uB9CE\uB2E4)"
+  - speaker: Player
+    text: "\uB124 \uC54C\uACA0\uC2B5\uB2C8\uB2E4"

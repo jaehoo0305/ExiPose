@@ -9897,7 +9897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::TinyGiantStudio.Text.TextUpdater
-  GUIID: 157344
+  GUIID: 286614
 --- !u!1 &901111706
 GameObject:
   m_ObjectHideFlags: 0
@@ -15852,7 +15852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::TinyGiantStudio.Text.TextUpdater
-  GUIID: 157684
+  GUIID: 286954
 --- !u!1 &1489748471
 GameObject:
   m_ObjectHideFlags: 0
@@ -18069,7 +18069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::TinyGiantStudio.Text.TextUpdater
-  GUIID: 157816
+  GUIID: 287086
 --- !u!4 &1697897734
 Transform:
   m_ObjectHideFlags: 0
@@ -19585,6 +19585,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4400285401325042, guid: a524625e393c741788df9d44e0e4168f, type: 3}
   m_PrefabInstance: {fileID: 1805271862}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1808039061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1808039063}
+  - component: {fileID: 1808039062}
+  m_Layer: 0
+  m_Name: GameFlow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1808039062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808039061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fdc345b87c79f4483a5d701bd5d34e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameFlow
+  startRooftopIntro: 0
+--- !u!4 &1808039063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808039061}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -106.78815, y: 78.72057, z: -101.72688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1810395685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21548,7 +21593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::TinyGiantStudio.Text.TextUpdater
-  GUIID: 157998
+  GUIID: 287274
 --- !u!1001 &1946759232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22635,7 +22680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::TinyGiantStudio.Text.TextUpdater
-  GUIID: 158046
+  GUIID: 287322
 --- !u!1001 &2006108069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23896,3 +23941,4 @@ SceneRoots:
   - {fileID: 624039011}
   - {fileID: 1489748473}
   - {fileID: 1792048126}
+  - {fileID: 1808039063}
