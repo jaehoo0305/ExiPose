@@ -63,6 +63,17 @@ public class Interactable : MonoBehaviour
         }
     }
 
+    void OnDisable()
+    {
+        if (promptVisible && InteractionUI.Instance != null)
+        {
+            InteractionUI.Instance.Hide();
+            promptVisible = false;
+        }
+
+        playerInRange = false;
+    }
+
     void ShowPrompt()
     {
         if (InteractionUI.Instance != null)
