@@ -6,7 +6,7 @@ public class WeaponPickup : MonoBehaviour
 
     public void OnPickUp()
     {
-        WeaponEquipManager equipManager = FindObjectOfType<WeaponEquipManager>();
+        WeaponEquipManager equipManager = FindFirstObjectByType<WeaponEquipManager>();
         if (equipManager == null)
         {
             Debug.LogWarning("[WeaponPickup] WeaponEquipManager not found in scene.");
