@@ -13,10 +13,10 @@ public class EnemyBase : MonoBehaviour
 
     [Header("Chase")]
     public float chaseSpeed = 3.5f;
-    public float attackRange = 1.8f;
+    public float attackRange = 1f;
 
     [Header("Attack")]
-    public float attackInterval = 1.0f;
+    public float attackInterval = 1.2f;
 
     [Header("Movement")]
     public float rotationSpeed = 10f;
@@ -30,6 +30,8 @@ public class EnemyBase : MonoBehaviour
 
     public int PatrolIndex { get => patrolIndex; set => patrolIndex = value; }
     public Vector3 Velocity => velocity;
+
+    float animSpeed;
 
     void Awake()
     {
@@ -143,8 +145,13 @@ public class EnemyBase : MonoBehaviour
     void UpdateAnimation()
     {
         if (animator == null) return;
-        float speed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
-        animator.SetFloat("Speed", speed);
+
+        float rawSpeed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
+
+        // 부드럽게 보간 (숫자 10은 반응 속도, 5~12 사이에서 취향껏)
+        animSpeed = Mathf.Lerp(animSpeed, rawSpeed, Time.deltaTime * 10f);
+
+        animator.SetFloat("Speed", animSpeed);
     }
 
     public bool IsTargetInAttackRange()

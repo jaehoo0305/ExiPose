@@ -8,7 +8,7 @@ public class EnemyStateChase : IEnemyState
 
     public void Exit(EnemyBase enemy)
     {
-        enemy.SetVelocity(Vector3.zero);
+        //enemy.SetVelocity(Vector3.zero);
     }
 
     public void Tick(EnemyBase enemy, float dt)
