@@ -1070,6 +1070,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7620271021023955913, guid: e7731e319bf5d884289e05d643be0d5f, type: 3}
       insertIndex: 3
       addedObject: {fileID: 110926355}
+    - targetCorrespondingSourceObject: {fileID: 7620271021023955913, guid: e7731e319bf5d884289e05d643be0d5f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110926356}
   m_SourcePrefab: {fileID: 100100000, guid: e7731e319bf5d884289e05d643be0d5f, type: 3}
 --- !u!1001 &66467134
 PrefabInstance:
@@ -1566,6 +1569,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTalkAnimator
   speakerName: Player
+--- !u!114 &110926356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110926342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710b7c7646892734cbc657990183711b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttackEvents
+  hitbox: {fileID: 0}
 --- !u!4 &111924236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6808001334075648215, guid: 6760782994c5ce84880624b2eea3b2b2, type: 3}
@@ -18245,7 +18261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::TinyGiantStudio.Text.TextUpdater
-  GUIID: 50674
+  GUIID: 110006
 --- !u!4 &1573247597 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3157915722995381223, guid: 4cd767daf670682449986ef6564943e1, type: 3}
@@ -18938,6 +18954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractionUI
   panel: {fileID: 1971636930}
   text: {fileID: 1646958086}
+  canvasGroup: {fileID: 0}
 --- !u!114 &1664895993
 MonoBehaviour:
   m_ObjectHideFlags: 0
