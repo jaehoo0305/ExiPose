@@ -14,11 +14,23 @@ public class EnemySensor : MonoBehaviour
     public bool drawGizmos = true;
 
     public bool CanSeeTarget { get; private set; }
-    public Vector3 LastSeenPosition { get; private set; }
+    public float lastSeenTime { get; private set; }
 
     float cosHalfAngle;
 
     void Awake()
+    {
+        RecalculateCosHalfAngle();
+    }
+
+#if UNITY_EDITOR
+    void OnValidate()
+    {
+        RecalculateCosHalfAngle();
+    }
+#endif
+
+    void RecalculateCosHalfAngle()
     {
         cosHalfAngle = Mathf.Cos(viewHalfAngle * Mathf.Deg2Rad);
     }
@@ -30,27 +42,49 @@ public class EnemySensor : MonoBehaviour
 
     void UpdateSensor()
     {
-        CanSeeTarget = false;
-        if (target == null) return;
+        if (target == null)
+        {
+            CanSeeTarget = false;
+            return;
+        }
 
         Vector3 toTarget = target.position - transform.position;
-        float sqrDist = toTarget.sqrMagnitude;
-        if (sqrDist > viewDistance * viewDistance)
-            return;
+        float dist = toTarget.magnitude;
 
-        Vector3 dir = toTarget.normalized;
-        float dot = Vector3.Dot(transform.forward, dir);
+        if (dist > viewDistance)
+        {
+            CanSeeTarget = false;
+            return;
+        }
+
+        toTarget.y = 0f;
+        Vector3 fwd = transform.forward;
+        float dot = Vector3.Dot(fwd.normalized, toTarget.normalized);
+
         if (dot < cosHalfAngle)
+        {
+            CanSeeTarget = false;
             return;
+        }
 
-        if (Physics.Raycast(transform.position + Vector3.up * 1.7f, dir, out RaycastHit hit, viewDistance, ~0))
+        Vector3 origin = transform.position + Vector3.up * 1.6f;
+
+        if (Physics.Raycast(origin, toTarget.normalized, out RaycastHit hit, viewDistance, ~obstacleMask))
         {
             if (hit.transform == target)
             {
                 CanSeeTarget = true;
-                LastSeenPosition = target.position;
+                lastSeenTime = Time.time;
+                return;
             }
         }
+
+        CanSeeTarget = false;
+    }
+
+    public bool HasRecentlySeenTarget(float memoryDuration)
+    {
+        return Time.time - lastSeenTime <= memoryDuration;
     }
 
     void OnDrawGizmosSelected()

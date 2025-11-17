@@ -29,31 +29,25 @@ public class Health : MonoBehaviour, IDamageable
     void Awake()
     {
         currentHP = Mathf.Clamp(currentHP, 0, maxHP);
-        RaiseHealthChanged();
+        onHealthChanged?.Invoke(currentHP, maxHP);
     }
 
-    public void TakeDamage(int amount, Vector3 hitPoint, Vector3 hitDirection)
+    public void TakeDamage(int amount, Vector3 hitPoint, Vector3 hitDir)
     {
         if (isDead) return;
+        if (amount <= 0) return;
 
         if (useInvuln && Time.time < invulnEndTime)
-        {
-            // Refractory window: ignore damage during I-Frames
             return;
-        }
-
-        if (amount <= 0) return;
 
         currentHP -= amount;
         if (currentHP < 0) currentHP = 0;
 
         if (useInvuln)
-        {
             invulnEndTime = Time.time + invulnDuration;
-        }
 
         onDamaged?.Invoke(amount);
-        RaiseHealthChanged();
+        onHealthChanged?.Invoke(currentHP, maxHP);
 
         if (currentHP <= 0)
         {
@@ -69,7 +63,7 @@ public class Health : MonoBehaviour, IDamageable
         currentHP += amount;
         if (currentHP > maxHP) currentHP = maxHP;
 
-        RaiseHealthChanged();
+        onHealthChanged?.Invoke(currentHP, maxHP);
     }
 
     void RaiseHealthChanged()
@@ -81,7 +75,7 @@ public class Health : MonoBehaviour, IDamageable
     {
         if (isDead) return;
         isDead = true;
+
         onDied?.Invoke();
-        // Option: disable collider, AI, etc.
     }
 }
