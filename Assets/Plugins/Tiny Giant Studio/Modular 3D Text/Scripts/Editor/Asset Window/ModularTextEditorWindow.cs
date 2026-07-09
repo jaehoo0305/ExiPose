@@ -133,7 +133,6 @@ namespace TinyGiantStudio.Text.EditorFiles
             public Label meshInformationLabel;
         }
 
-        [SerializeField]
         private AssetSettings Settings
         {
             get
