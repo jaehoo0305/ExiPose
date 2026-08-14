@@ -9,11 +9,11 @@ public class DoorToGameScene : MonoBehaviour
     {
         if (SceneLoader.Instance != null)
         {
-            SceneLoader.Instance.LoadScene(sceneName);
+            SceneLoader.Instance.LoadScene(sceneName);   // 로딩 화면 있는 버전
         }
         else
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(sceneName);           // 혹시 SceneLoader 없을 때 대비
         }
     }
 }

@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-    public static SceneLoader Instance;
-
     [Header("Loading UI")]
     public GameObject loadingCanvas;
     public float minimumLoadTime = 1f;
+
+
+    public static SceneLoader Instance { get; private set; }
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+
             DontDestroyOnLoad(gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
             FindLoadingCanvas();

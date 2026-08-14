@@ -11,7 +11,7 @@ public class ItemDropper : MonoBehaviour
     }
 
     [Header("Weights Setting")]
-    public ItemElement[] probs; // 변수명 그대로 유지
+    public ItemElement[] probs;
 
     [Header("Drop Area")]
     public Transform dropPoint;
@@ -50,7 +50,6 @@ public class ItemDropper : MonoBehaviour
         return true;
     }
 
-    // 4. 매개변수 타입을 ItemElement[]로 변경하여 가중치 추출 연동
     int SampleIndex(ItemElement[] weights)
     {
         int n = weights.Length;
@@ -62,7 +61,6 @@ public class ItemDropper : MonoBehaviour
 
         for (int i = 0; i < n; i++)
         {
-            // 5. 구조체 내부의 weight를 누적합하도록 이 부분만 수정 (.weight 추가)
             total += weights[i].weight;
             prefix[i] = total;
         }
@@ -74,7 +72,6 @@ public class ItemDropper : MonoBehaviour
         int left = 0;
         int right = n - 1;
 
-        // 네가 작성한 이진 탐색 로직 원형 100% 유지
         while (left < right)
         {
             int mid = (left + right) / 2;
