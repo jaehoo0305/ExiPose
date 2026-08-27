@@ -4817,10 +4817,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropper
   probs:
   - itemName: Rare
-    weight: 60
+    weight: 125
     prefab: {fileID: 1846160755511594, guid: 5f3499b7ccca7438db0396f05573acae, type: 3}
   - itemName: Epic
-    weight: 35
+    weight: 25
     prefab: {fileID: 1872412180362304, guid: 5d3dafc3b20484eb1971092f27cac145, type: 3}
   - itemName: Legendary
     weight: 5

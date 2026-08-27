@@ -4231,7 +4231,7 @@ Transform:
   m_GameObject: {fileID: 356209213}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -148.45154, y: 19.98, z: -106.36995}
+  m_LocalPosition: {x: -148.45154, y: 29.1, z: -99.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8625,7 +8625,7 @@ Transform:
   m_GameObject: {fileID: 751442039}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -150.23154, y: 51.23, z: -133.21996}
+  m_LocalPosition: {x: -150.23154, y: 51.6, z: -145.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19487,7 +19487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b69eb3f1c55974bb1bcc1dbc547a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::TinyGiantStudio.Text.TextUpdater
-  GUIID: 67688
+  GUIID: 70432
 --- !u!1001 &1698622809
 PrefabInstance:
   m_ObjectHideFlags: 0

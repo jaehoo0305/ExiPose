@@ -9,7 +9,6 @@ public class SceneLoader : MonoBehaviour
     public GameObject loadingCanvas;
     public float minimumLoadTime = 1f;
 
-
     public static SceneLoader Instance { get; private set; }
 
     private void Awake()
@@ -18,13 +17,13 @@ public class SceneLoader : MonoBehaviour
         {
             Instance = this;
 
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(this.gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
             FindLoadingCanvas();
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 
@@ -42,7 +41,6 @@ public class SceneLoader : MonoBehaviour
     {
         if (loadingCanvas != null) return;
 
-        // 1) Tag search
         var tagged = GameObject.FindWithTag("LoadingCanvas");
         if (tagged != null)
         {
@@ -50,7 +48,6 @@ public class SceneLoader : MonoBehaviour
             return;
         }
 
-        // 2) Name search
         var byName = GameObject.Find("LoadingCanvas");
         if (byName != null)
         {
@@ -58,7 +55,6 @@ public class SceneLoader : MonoBehaviour
             return;
         }
 
-        // 3) Any Canvas that contains "loading" in its name (include inactive)
 #if UNITY_2023_1_OR_NEWER
         var canvases = Object.FindObjectsByType<Canvas>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 #else
@@ -84,7 +80,9 @@ public class SceneLoader : MonoBehaviour
         FindLoadingCanvas();
 
         if (loadingCanvas != null)
+        {
             loadingCanvas.SetActive(true);
+        }
 
         yield return new WaitForSeconds(minimumLoadTime);
 
@@ -97,6 +95,8 @@ public class SceneLoader : MonoBehaviour
         FindLoadingCanvas();
 
         if (loadingCanvas != null)
+        {
             loadingCanvas.SetActive(false);
+        }
     }
 }
