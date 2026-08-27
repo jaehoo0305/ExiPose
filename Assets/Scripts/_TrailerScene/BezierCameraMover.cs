@@ -31,11 +31,11 @@ public class BezierCameraMover : MonoBehaviour
     Vector3 bezierCurve()
     {
         Vector3 p1 = Vector3.Lerp(startPoint.position, 
-                                  controlPoint1.position, time);
+                                        controlPoint1.position, time);
         Vector3 p2 = Vector3.Lerp(controlPoint1.position, 
-                                  controlPoint2.position, time);
+                                        controlPoint2.position, time);
         Vector3 p3 = Vector3.Lerp(controlPoint2.position, 
-                                  endPoint.position, time);
+                                        endPoint.position, time);
         Vector3 p4 = Vector3.Lerp(p1, p2, time);
         Vector3 p5 = Vector3.Lerp(p2, p3, time);
         Vector3 p6 = Vector3.Lerp(p4, p5, time);
