@@ -23,7 +23,6 @@ public class ItemDropper : MonoBehaviour
 
     public void DropItem()
     {
-        // 1. 유효성 검사 함수 이름 및 대상 변경
         if (!ValidateProbs())
         {
             Debug.LogWarning("[ItemDropper] 프리팹이 누락되었거나 설정이 올바르지 않습니다.");
@@ -35,11 +34,9 @@ public class ItemDropper : MonoBehaviour
 
         Vector3 pos = dropPoint != null ? dropPoint.position : transform.position;
 
-        // 2. 기존 prefabs[index] 대신 probs[index].prefab 사용
         Instantiate(probs[index].prefab, pos, Quaternion.identity);
     }
 
-    // 3. probs 배열 내부에 프리팹이 잘 들어있는지 검사하도록 수정
     bool ValidateProbs()
     {
         if (probs == null || probs.Length == 0) return false;
@@ -54,8 +51,6 @@ public class ItemDropper : MonoBehaviour
     {
         int n = weights.Length;
 
-        if (n == 0) return -1;
-
         float[] prefix = new float[n];
         float total = 0f;
 
@@ -64,8 +59,6 @@ public class ItemDropper : MonoBehaviour
             total += weights[i].weight;
             prefix[i] = total;
         }
-
-        if (total <= 0f) return -1;
 
         float r = Random.Range(0f, total);
 
@@ -77,9 +70,13 @@ public class ItemDropper : MonoBehaviour
             int mid = (left + right) / 2;
 
             if (prefix[mid] < r)
+            { 
                 left = mid + 1;
+            }
             else
+            {
                 right = mid;
+            }
         }
 
         return left;
