@@ -82,7 +82,6 @@ public class ItemDropper : MonoBehaviour
         return left;
     }
 
-    // 에디터에서 테스트용
     [ContextMenu("Test Drop")]
     void TestDropInEditor()
     {
