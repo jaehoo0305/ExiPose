@@ -4816,14 +4816,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemDropper
   probs:
-  - itemName: Rare
-    weight: 125
+  - itemName: Common
+    weight: 100
     prefab: {fileID: 1846160755511594, guid: 5f3499b7ccca7438db0396f05573acae, type: 3}
-  - itemName: Epic
-    weight: 25
+  - itemName: Rare
+    weight: 50
     prefab: {fileID: 1872412180362304, guid: 5d3dafc3b20484eb1971092f27cac145, type: 3}
   - itemName: Legendary
-    weight: 5
+    weight: 15
     prefab: {fileID: 1006965567620430, guid: 8990abd47ad784f378160d3745607c8e, type: 3}
   dropPoint: {fileID: 704150176}
 --- !u!4 &1049801358

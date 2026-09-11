@@ -50,7 +50,6 @@ public class ItemDropper : MonoBehaviour
     int SampleIndex(ItemElement[] weights)
     {
         int n = weights.Length;
-
         float[] prefix = new float[n];
         float total = 0f;
 
@@ -69,16 +68,9 @@ public class ItemDropper : MonoBehaviour
         {
             int mid = (left + right) / 2;
 
-            if (prefix[mid] < r)
-            { 
-                left = mid + 1;
-            }
-            else
-            {
-                right = mid;
-            }
+            if (prefix[mid] < r) { left = mid + 1; }
+            else { right = mid; }
         }
-
         return left;
     }
 
